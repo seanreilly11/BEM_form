@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="main.css">
+    <title>BEM form</title>
+</head>
+<body>
+<div class="member">
+    <h1 class="member__heading">Membership Form</h1>
+    <form class="member__form">
+        <div class="member__row">
+            <label for="name" class="member__label">Name</label>
+            <input type="text" id="name" class="member__input member__input-name">
+        </div>
+
+        <div class="member__row">
+            <label for="email" class="member__label">Email</label>
+            <input type="text" id="email" class="member__input member__input--email">
+        </div>
+        <div class="member__row">
+            <label for="phone" class="member__label">Phone</label>
+            <input type="text" id="phone" class="member__input member__input--phone">
+        </div>
+        <div class="member__row">
+            <label class="member__label member__label--place">Place</label>
+            <div class="member__input">
+                Wellington<input type="radio" name="place" id="welly" class="member__input">
+                Auckland<input type="radio" name="place" id="akl" class="member__input">
+            </div>
+        </div>
+        <div class="member__row">
+            <label class="member__label member__label--hobbies">Hobbies</label>
+            <div class="member__input">
+                Cycling<input type="checkbox" id="check1" class="member__check">
+                Watching TV<input type="checkbox" id="check2" class="member__check">
+                Alcohol<input type="checkbox" id="check3" class="member__check">
+            </div>
+        </div>
+        <div class="member__row">
+            <label class="member__label">Support</label>
+            <select>
+                <option value="edu">Education</option>
+                <option value="fina">Finance</option>
+                <option value="life">Life Skills</option>
+                <option value="career">Career</option>
+            </select>
+        </div>
+        <div class="member__row">
+            <label for="message" class="member__label">Message</label>
+            <textarea name="message" id="message" class="member__input member__text--message" cols="30" rows="10"></textarea>
+        </div>
+        <input type="submit" value="Submit">
+    </form>
+</div>
+</body>
+</html>

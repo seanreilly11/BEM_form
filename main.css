@@ -1,0 +1,42 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background: lightblue;
+}
+
+.member{
+    width: 70%;
+    margin: auto;
+}
+.member__heading{
+    font-size: 48px;
+    padding: .5em 0;
+}
+.member__form{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,.2);
+}
+
+.member__label{
+    /*display: block;*/
+}
+.member__input{
+    /*display: block;*/
+    color: darkblue;
+    border-radius: 5px;
+}
+
+.member__radio{
+    display: inline-block;
+}
+
+.member__label--place, .member__label--place{
+    display: inline-block;
+}
+
+.member__row{
+    display: block;
+    padding: .5rem;
+}
